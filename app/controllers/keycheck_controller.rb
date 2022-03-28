@@ -1,4 +1,4 @@
-require "./app/keycheck_function"
+require "./app/controllers/keycheck_function"
 class KeycheckController < ApplicationController
 
     def top
