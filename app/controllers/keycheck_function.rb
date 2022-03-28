@@ -64,8 +64,3 @@ class KeycheckFunction
         return ans_keys
     end
 end
-
-
-# a = Keycheckfunction.new
-# ans = a.keycheckfunc(['C', 'Dm', 'Em', 'F', 'G', 'Am'])
-# puts ans
