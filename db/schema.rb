@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_31_074041) do
+ActiveRecord::Schema.define(version: 2022_03_31_132518) do
 
   create_table "songs", force: :cascade do |t|
     t.text "song_title"
-    t.text "key"
+    t.text "keys"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
