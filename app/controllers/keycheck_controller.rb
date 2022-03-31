@@ -19,6 +19,5 @@ class KeycheckController < ApplicationController
         a = KeycheckFunction.new
         @determined_key = a.keycheckfunc(@input_codes)
 
-
     end
 end
