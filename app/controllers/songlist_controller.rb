@@ -5,7 +5,7 @@ class SonglistController < ApplicationController
     end
 
     def add_key
-        song = Song.new(song_title:params[:song_title], key:params[:key])
+        song = Song.new(song_title:params[:song_title], keys:params[:key])
         song.save
         redirect_to("/songlist")
     end
