@@ -4,4 +4,14 @@
   </div>
 </header>
 
-<div>songlist</div>
+<div class="keycheck_title">
+  <h3>songlist</h3>
+</div>
+
+<div class="index-content">
+    <% @songs.each do |song| %>
+      <div class="songs-index-item">
+        <%= song.song_title %>
+      </div>
+    <% end %>
+</div>
