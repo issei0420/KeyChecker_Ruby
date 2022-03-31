@@ -3,7 +3,7 @@ class SonglistController < ApplicationController
     end
 
     def add_key
-        redirect_to("/")
         @song_title = params[:song_title]
+        redirect_to("/songlist")
     end
 end
