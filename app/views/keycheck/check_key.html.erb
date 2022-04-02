@@ -13,7 +13,7 @@
     <div class="list_link">
     <form method="post" action="/songlist/add_key">
       <label for="email">曲名を入力</label>
-      <input type="hidden" name="key" value="<%= @determined_key %>" />
+      <input type="hidden" name="keys" value="<%= @keys %>" />
       <input type="text" name="song_title" id="song_title">
       <button type="submit">リストに追加</button>
     </form>

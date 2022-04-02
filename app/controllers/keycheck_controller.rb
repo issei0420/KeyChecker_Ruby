@@ -17,8 +17,8 @@ class KeycheckController < ApplicationController
         end
         
         a = KeycheckFunction.new
-        determined_keys = a.keycheckfunc(@input_codes)
-        @keys = determined_keys.join(', ')
+        keys = a.keycheckfunc(@input_codes)
+        @keys = keys.join(', ')
 
     end
 end

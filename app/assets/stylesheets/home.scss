@@ -177,9 +177,11 @@
     .songlist_table {
       margin: auto;
       text-align: center;
-      height: 150px;
     }
 
+    .songlist_table tr {
+      height: 60px;
+    }
 
     /* Index content ================================ */
     .index-content {
