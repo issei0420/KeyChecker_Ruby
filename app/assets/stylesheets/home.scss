@@ -145,7 +145,6 @@
   .keycheck_title h3{
     text-align: center;
     padding-top: 80px;
-    font-weight: normal;
   }
 
   .input_form {
@@ -175,8 +174,14 @@
       color: black;
     }
 
+    .songlist_table {
+      margin: auto;
+      text-align: center;
+      height: 150px;
+    }
+
+
     /* Index content ================================ */
     .index-content {
-      text-align: center;
       margin-top: 20px;
     }

@@ -5,15 +5,19 @@
 </header>
 
 <div class="keycheck_title">
-  <h3>songlist</h3>
+  <h3>Song List</h3>
 </div>
 
 <div class="index-content">
-    <% @songs.each do |song| %>
-      <div class="songs-index-item">
-        <%= song.song_title %>
-        <%= song.keys %>
-        <%= link_to("削除", "/songlist/#{song.id}/destroy", {method: "post"}) %>
-      </div>
-    <% end %>
+    <table class="songlist_table", border="1">
+      <% @songs.each do |song| %>
+        <tr>
+          <div class="songs-index-item">
+            <td><%= song.song_title %></td>
+            <td><%= song.keys %></td>
+            <td><%= link_to("削除", "/songlist/#{song.id}/destroy", {method: "post"}) %></td>
+          </div>
+        </tr>
+      <% end %>
+    </table>
 </div>
