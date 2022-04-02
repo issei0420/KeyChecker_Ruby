@@ -9,4 +9,10 @@ class SonglistController < ApplicationController
         song.save
         redirect_to("/songlist")
     end
+
+    def destroy
+        song = Song.find_by(id: params[:id])
+        song.destroy
+        redirect_to("/songlist")
+    end
 end
