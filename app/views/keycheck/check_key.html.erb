@@ -6,13 +6,9 @@
 
 
 <div class="determined_key">
-    <h2><%= @determined_key %>の可能性が高いです</h2>
+    <h2><%= @keys %>の可能性が高いです</h2>
 </div>
 
-
-
-
-<%= @key %>
 <%= form_tag("/songlist/add_key") do %>
     <div class="list_link">
     <form method="post" action="/songlist/add_key">
