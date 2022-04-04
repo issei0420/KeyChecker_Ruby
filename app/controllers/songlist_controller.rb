@@ -13,7 +13,6 @@ class SonglistController < ApplicationController
     def destroy
         song = Song.find_by(id: params[:id])
         song.destroy
-        exit
         redirect_to("/songlist")
     end
 end

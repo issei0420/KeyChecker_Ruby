@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get '/songlist/1/destroy' => "songlist#index"
   get '/' => "home#top"
   get '/keycheck' => "keycheck#top"
   post '/keycheck/check_key' => "keycheck#check_key"
